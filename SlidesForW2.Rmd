@@ -1,0 +1,32 @@
+---
+title: "Homework for W2, to be submitted"
+author: "Cage"
+date: "12/29/2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Dec 29, 2018
+- This is where I lived in the early 2000s. Beautiful place.
+```{r cars, echo = FALSE}
+library(leaflet)
+content <- paste(sep = "<br/>",
+  "<b><a href='http://www.cityofirvine.org'>Where I lived</a></b>",
+  "x Le Vanto",
+  "Irvine, CA"
+)
+m = leaflet() %>% addTiles() %>%
+  addPopups(lat=33.6914884, lng=-117.8131034, content,
+    options = popupOptions(closeButton = FALSE)
+  )
+
+# m = leaflet() %>%
+#   addTiles() %>%
+#   addMarkers(lat=33.6914884, lng=-117.8131034, popup="Where I lived")
+
+m
+```
+
