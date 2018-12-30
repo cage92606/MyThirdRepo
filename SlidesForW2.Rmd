@@ -1,8 +1,9 @@
 ---
-title: "Homework for W2, to be submitted"
+title: "Homework for W2"
 author: "Cage"
 date: "12/29/2018"
-output: ioslides_presentation
+output:
+  ioslides_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -28,5 +29,7 @@ m = leaflet() %>% addTiles() %>%
 #   addMarkers(lat=33.6914884, lng=-117.8131034, popup="Where I lived")
 
 m
+#library(htmlwidgets)
+#saveWidget(m, file="m.html")
 ```
 
