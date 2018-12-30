@@ -1,7 +1,7 @@
 ---
 title: "Homework for W2"
 author: "Cage"
-date: "12/29/2018"
+date: "12/30/2018"
 output:
   ioslides_presentation: default
 ---
